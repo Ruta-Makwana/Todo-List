@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font libraries -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="todo">
+        <h1>To-Do List</h1>
+        <!-- form -->
+        <form id="add_task">
+          <input
+            type="text"
+            id="task"
+            name="tasktodo"
+            placeholder="&#128394;&#65039; Add task"
+          />
+          <button class="add_btn"><i class="fas fa-plus"></i></button>
+        </form>
+        <!-- end of form -->
+        <div class="todo_list">
+            <h2>Your Task List</h2>
+            <ul class="todo_list--container">
+                <!-- li has unchecked class because by default it is unchecked -->
+                <!-- <div class="todo_list--group">
+                    <li class="unchecked"><span>organize room</span></li>
+                    <button class="remove_btn">&#128473</button>
+                </div>
+                <div class="todo_list--group">
+                    <li class="unchecked"><span>organize bathroom</span></li>
+                    <button class="remove_btn">&#128473</button>
+                </div> -->
+            </ul>
+        </div>
+        <!-- footer -->
+        <div id="footer">
+            <h3 class="count"><p id="checked_tasks">0</p> out of <p id="all_tasks">0</p> tasks completed</h3>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
